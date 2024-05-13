@@ -12,7 +12,6 @@
 ### VARIABLES
 ##
 
-#rhel_script=/admin/Upgrade_RHEL7/rhel7_inplace.sh
 rhel_scriptname=rhel7_inplace.sh
 update_scriptname=update_servers.sh
 truth_var="y"
