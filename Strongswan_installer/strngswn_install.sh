@@ -67,7 +67,7 @@ sed -i '/net.ipv4.ip_forward=1/s/^#//; /net.ipv6.conf.all.forwarding=1/s/^#//; /
 sh -c 'echo include /etc/ipsec_files/*.conf >> /etc/ipsec.conf'
 mkdir /etc/ipsec_files
 cp *.conf /etc/ipsec_files
-sed -i sed "/xauth_identity=/s/$/$username/" /etc/ipsec_files/*.conf
+sed -i "/xauth_identity=/s/$/$username/" /etc/ipsec_files/*.conf
 cat ipsec.secrets >> /etc/ipsec.secrets
 sed -i "s%preshared%$pw_secret%g; s%username%$username%g; s%password%$password%g" /etc/ipsec.secrets
 service_reboot
